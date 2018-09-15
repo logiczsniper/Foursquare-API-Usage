@@ -49,19 +49,22 @@ class VenueInfoRequest(FourSquareRequest):
         :param item: the information required by the user. Possible options specified above.
         :type: str
 
-        if item == "hours":
-            :return: a data structure containing the open hours on the open days of the venue.
-        elif item == "menu":
-            :return: a data structure containing the menu, if there is one, of the venue.
-        elif item == "links":
-            :return: a data structure containing links supplied by the provider for more information for the venue.
-        elif item == "events":
-            :return: a data structure containing information on events held at the venue.
-        elif item == "similar":
-            :return: a data structure containing information on venues similar to the specified venue.
-        elif item == "nextvenues":
-            :return: a data structure containing information on the next recommended venue to visit.
+        :return: a data structure containing the open hours on the open days of the venue. (item == "hours")
+        :rtype: dict
 
+        :return: a data structure containing the menu, if there is one, of the venue. (item == "menu")
+        :rtype: dict
+
+        :return: a data structure containing links for more information for the venue. (item == "links")
+        :rtype: dict
+
+        :return: a data structure containing information on events held at the venue. (item == "events")
+        :rtype: dict
+
+        :return: a data structure containing information on venues similar to the specified venue. (item == "similar")
+        :rtype: dict
+
+        :return: a data structure containing information on the next recommended venue to visit. (item == "nextvenues")
         :rtype: dict
         """
 

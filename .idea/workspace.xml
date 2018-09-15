@@ -2,17 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1eb1a60-99e9-4c6f-ae6d-2d7c7a0e0e7d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/Foursquare-api-service.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Logan.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api_requests/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api_requests/base_request.py" />
-      <change beforePath="$PROJECT_DIR$/api_requests/category_requests.py" afterPath="$PROJECT_DIR$/api_requests/category_requests.py" />
-      <change beforePath="$PROJECT_DIR$/api_requests/venue_actions_requests.py" afterPath="$PROJECT_DIR$/api_requests/venue_actions_requests.py" />
       <change beforePath="$PROJECT_DIR$/api_requests/venue_info_requests.py" afterPath="$PROJECT_DIR$/api_requests/venue_info_requests.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,8 +36,8 @@
       <file leaf-file-name="venue_info_requests.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api_requests/venue_info_requests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="423">
+              <caret line="57" column="104" lean-forward="true" selection-start-line="57" selection-start-column="104" selection-end-line="57" selection-end-column="104" />
               <folding>
                 <element signature="e#257#272#0" expanded="true" />
               </folding>
@@ -387,8 +376,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api_requests/venue_info_requests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="423">
+          <caret line="57" column="104" lean-forward="true" selection-start-line="57" selection-start-column="104" selection-end-line="57" selection-end-column="104" />
           <folding>
             <element signature="e#257#272#0" expanded="true" />
           </folding>
