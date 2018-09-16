@@ -10,7 +10,6 @@ get similar -
 get next    -
 """
 
-import requests
 from api_requests.base_request import FourSquareRequest
 
 
@@ -34,9 +33,9 @@ class VenueInfoRequest(FourSquareRequest):
         :rtype: dict
         """
 
-        response = requests.get(self.venue_url.format(venue_id), params=self.base_querystring)
+        response = self.my_get(self.venue_url.format(venue_id), self.base_querystring)
 
-        return response.text
+        return response
 
     def get_venue_item(self, venue_id, item):
         """
@@ -68,6 +67,6 @@ class VenueInfoRequest(FourSquareRequest):
         :rtype: dict
         """
 
-        response = requests.get(self.venue_url.format(venue_id) + "/" + item, params=self.base_querystring)
+        response = self.my_get(self.venue_url.format(venue_id) + "/" + item, self.base_querystring)
 
-        return response.text
+        return response

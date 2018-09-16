@@ -5,7 +5,6 @@ get tips for a venue
 search venues
 """
 
-import requests
 from api_requests.base_request import FourSquareRequest
 
 
@@ -20,14 +19,12 @@ class VenueActionRequest(FourSquareRequest):
 
     def search_venues(self, query=None, category_id=None):
         """
-        Request type: GET
-
         This method searches for venues based on a query AND/OR category id.
 
-        :param query: the term that the venue names will be searched with
+        :param query: the term that the venue names will be searched with.
         :type: str
 
-        :param category_id: the id of the category that the events will be searched from
+        :param category_id: the id of the category that the events will be searched from.
         :type: str
 
         :return: a data structure containing venues corresponding with the searched parameters.
@@ -36,22 +33,22 @@ class VenueActionRequest(FourSquareRequest):
 
         querystring = {**self.base_querystring, **{"near": "Dublin, IE", "query": query, "categoryId": category_id}}
         self.base_url += 'venues/search'
-        response = requests.get(self.base_url, params=querystring)
+        response = self.my_get(self.base_url, querystring)
 
-        return response.text
+        return response
 
     def get_venue_tips(self, venue_id):
         """
         Gets tips about the venue from past visitors.
 
-        :param venue_id: the venue id of the venue to get tips for
+        :param venue_id: the venue id of the venue to get tips for.
         :type: str
 
-        :return: a data structure containing between 0-10 tips for the specified venue
+        :return: a data structure containing between 0-10 tips for the specified venue.
         :rtype: dict
         """
 
         querystring = {**self.base_querystring, **{"sort": "popular", "limit": 10}}
-        response = requests.get(self.venue_url.format(venue_id)+"/tips", params=querystring)
+        response = self.my_get(self.venue_url.format(venue_id)+"/tips", querystring)
 
-        return response.text
+        return response
