@@ -5,6 +5,7 @@ Holds basic information required by each request to the Foursquare API
 
 
 from requests import get
+from json import loads
 from client_data import ClientData
 
 
@@ -37,4 +38,4 @@ class FourSquareRequest:
         :rtype: dict
         """
 
-        return get(url, params=querystring).text
+        return loads(get(url, params=querystring).text).get('response')

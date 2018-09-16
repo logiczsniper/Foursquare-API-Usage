@@ -25,7 +25,6 @@ class CategoryRequest(FourSquareRequest):
         :rtype: dict
         """
 
-        self.base_url += 'venues/categories'
-        response = self.my_get(self.base_url, self.base_querystring)
+        response = self.my_get(self.base_url + 'venues/categories', self.base_querystring)
 
         return response

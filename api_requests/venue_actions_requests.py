@@ -32,8 +32,7 @@ class VenueActionRequest(FourSquareRequest):
         """
 
         querystring = {**self.base_querystring, **{"near": "Dublin, IE", "query": query, "categoryId": category_id}}
-        self.base_url += 'venues/search'
-        response = self.my_get(self.base_url, querystring)
+        response = self.my_get(self.base_url + 'venues/search', querystring)
 
         return response
 
