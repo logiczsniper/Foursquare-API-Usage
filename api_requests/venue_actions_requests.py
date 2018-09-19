@@ -31,7 +31,7 @@ class VenueActionRequest(FourSquareRequest):
         :rtype: dict
         """
 
-        querystring = {**self.base_querystring, **{"near": "Dublin, IE", "query": query, "categoryId": category_id}}
+        querystring = {**self.base_querystring, **{"near": "New York, NY", "query": query, "categoryId": category_id}}
         response = self.my_get(self.base_url + 'venues/search', querystring)
 
         return response
